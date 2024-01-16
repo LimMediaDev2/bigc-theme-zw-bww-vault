@@ -1093,17 +1093,20 @@ $(document).ready(function() {
   }
 });
 
-
+/* LimMedia.io: Review Diff Tags if needed */
 // NAVPAGES FIX
 $(document).ready(function() {
   if($(window).innerWidth() <= 800) {
     $( "#menu .mega-cat-dropdown i.mega-nav-pages" ).click(function( event ) {
       // $(this).parents('li.navPages-item.top-level.mega-nav-pages').toggleClass('mobile-parent-active');
       // $(this).parents('li').find('ul:first').toggleClass('activeDropDown');
-      $(this).parents('li').find('i.mega-nav-pages:first').toggleClass('mobile-icon-active');
+      $(this).parent('.navPages-action').find('i.mega-nav-pages:first').toggleClass('mobile-icon-active');
     //   if ($('li.navPages-item.top-level.mega-nav-pages').hasClass('mobile-parent-active')) {
     //     $(this).parents('li.navPages-item.top-level.mega-nav-pages').find('i.icon.navPages-action-moreIcon').addClass('mobile-icon-active');
-        $(this).parents('li.navPages-item.top-level.mega-nav-pages').find('.second-level-flyout').toggleClass('visible').slideToggle();
+        $(this).parent('.navPages-action').siblings('.navPage-subMenu').toggleClass('visible').slideToggle();
+        $(this).parent('.navPages-action').siblings('.navPage-childList').toggleClass('visible').slideToggle();
+        //console.log("arrow click");
+        
     // } else {
     //   // $(this).parents('li.navPages-item.top-level.mega-nav-pages').find('.second-level-flyout').slideUp();
     //   // $(this).parents('li.navPages-item.top-level.mega-nav-pages').find('i.icon.navPages-action-moreIcon').removeClass('mobile-icon-active');

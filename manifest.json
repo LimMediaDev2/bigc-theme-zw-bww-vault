@@ -39,7 +39,7 @@
         "name": "ssl_site_seal--global"
       }
     ],
-    "pages/brands": [
+        "pages/brands": [
       {
         "name": "header_below_nav--global"
       },
@@ -107,7 +107,7 @@
         "name": "ssl_site_seal--global"
       }
     ],
-    "pages/contact-us": [
+        "pages/contact-us": [
       {
         "name": "header_below_nav--global"
       },
@@ -118,7 +118,7 @@
         "name": "ssl_site_seal--global"
       }
     ],
-    "pages/home": [
+        "pages/home": [
       {
         "name": "header_below_nav--global"
       },
@@ -234,7 +234,7 @@
         "name": "ssl_site_seal--global"
       }
     ],
-    "pages/auth/create-account": [
+        "pages/auth/create-account": [
       {
         "name": "header_below_nav--global"
       },
